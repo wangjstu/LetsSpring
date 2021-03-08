@@ -1,0 +1,32 @@
+DELETE http://127.0.0.1:8080/student/del/6
+Accept: application/json
+
+###
+POST http://127.0.0.1:8080/student/update
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "王语嫣",
+  "score": 88.0,
+  "birthday": "2003-08-18T16:00:00.000+00:00"
+}
+
+###
+GET http://127.0.0.1:8080/student/findById/3
+Accept: application/json
+
+###
+POST http://127.0.0.1:8080/student/add
+Content-Type: application/json
+
+{
+  "name": "王语嫣",
+  "score": 60.0,
+  "birthday": "2003-08-18T16:00:00.000+00:00"
+}
+
+###
+# get
+GET http://127.0.0.1:8080/student/findAll
+
